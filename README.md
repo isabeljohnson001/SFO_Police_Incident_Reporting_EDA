@@ -1,2 +1,12 @@
-# San_Francisco_Police_Dept_Incident_EDA
-The San Francisco Police Department (SFPD) Incident Reporting system dataset is a comprehensive collection of reported incidents in the city of San Francisco, California. 
+<h1 align="center">San Francisco Police Department (SFPD) Incident Reporting</h1>
+The San Francisco Police Department (SFPD) Incident Reporting system dataset is a comprehensive collection of reported incidents in the city of San Francisco, California. The dataset contains incident reports filed as of January 1, 2018, and is updated regularly to reflect new incidents. The reports are categorized into three groups based on how the report was received and the type of incident: Initial Reports, Coplogic Reports, and Vehicle Reports.
+</br>
+The dataset can found under :-
+</br>
+https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783
+<h3>Overview</h3>
+This study aims to investigate various aspects of crime in San Francisco using a dataset provided by the instructor. The investigation will cover several areas, including crime trends, location analysis, crime type analysis, day and time analysis, and arrest analysis. The goal of the analysis is to identify patterns and trends in the data that can provide insights into the nature and distribution of crime in the city. By examining the data, we hope to gain a better understanding of which types of crimes are most prevalent in San Francisco, which neighborhoods are most affected, and how crime patterns vary by time and day. 
+<h3>Data Cleaning</h3>
+The first stage in our study was to make sure the dataset was of good quality. We started with data exploration to learn about the different columns and the kind of data they hold. The dataset has 699,606 records and 34 variables, comprising 22 integer and 12 character variables. We created the data structure and summary to gain a bird's-eye view of the dataset. We discovered vacant cells in the CAD and Intersection columns and filled them with N/A (not applicable) values. In addition, we found blank cells in the Filled Online column and filled them with False.
+Because the Incident Code and Incident Category are linked, and there is no definition for the Incident Code, we ignored empty entries in the Incident Category and Incident Sub-Category fields. The Analysis Neighbourhood column is the same. In addition, records with empty values in the Incident Category and Analysis Neighbourhood columns were eliminated. Neighborhoods, ESNCAG - Boundary File, Central Market/Tenderloin Boundary Polygon - Updated, Civic Center Harm Reduction Project Boundary, HSOC Zones as of 2018-06-05, Invest In Neighborhoods (IIN) Areas, Current Supervisor Districts, and Current Police Districts were also removed. Lastly, we ran a final NA check before exporting the clean dataset as a new data frame.
+<h3>Data Analysis and Visualizations</h3>
